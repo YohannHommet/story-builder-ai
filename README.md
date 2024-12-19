@@ -1,5 +1,8 @@
 <div align="center">
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5bdf7ec0-0649-4665-bc96-6e300d0c6e3e/deploy-status)](https://app.netlify.com/sites/story-builder-ai/deploys)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 </div>
 
 # Story Builder AI 📚✨
