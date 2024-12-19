@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Story Styles
+   ========================================================================== */
+
+#story-output {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#story-output.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.story-container {
+  background: var(--color-white-transparent);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 32px var(--color-shadow);
+  border: 3px solid var(--color-accent);
+  position: relative;
+  backdrop-filter: blur(10px);
+  animation: container-appear 0.6s ease-out;
+  will-change: transform, opacity;
+}
+
+.story-title {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.story-content {
+  background-color: rgba(199, 233, 255, 0.1);
+  border-radius: 0.9375rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 2rem;
+  position: relative;
+}
+
+/* Title Styles */
+.title-custom {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.title-section {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-decoration {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), transparent);
+  opacity: 0.5;
+}

@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+/* Primary Button */
+.button-custom {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  border-radius: var(--border-radius);
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  padding: 1.2rem 2rem;
+  transition: var(--transition-transform);
+  position: relative;
+  color: var(--color-text);
+  font-weight: bold;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  will-change: transform;
+}
+
+.button-custom:disabled {
+  opacity: 0.7;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--color-secondary);
+}
+
+.action-button {
+  --button-size: 3rem;
+  width: var(--button-size);
+  height: var(--button-size);
+  padding: 0.75rem;
+  border-radius: var(--border-radius-sm);
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: double 2px transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100% 100%, 300% 100%;
+  transition: var(--transition-transform);
+  will-change: transform, background-position;
+  animation: moveGradient 6s linear infinite;
+  filter: drop-shadow(0 0 2px rgba(255, 214, 231, 0.3));
+}
+
+.action-button::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: inherit;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 88, 118, 0.10);
+  filter: drop-shadow(0 0 4px rgba(255, 214, 231, 0.2));
+}
+
+.action-button:hover::after {
+  opacity: 0.3;
+}
+
+.action-button:active {
+  transform: translateY(0);
+}
+
+/* Action Button Variants */
+.action-button[data-action="copy"]:hover {
+  background-image: linear-gradient(#E8F5E9, #E8F5E9),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+}
+
+.action-button[data-action="share"]:hover {
+  background-image: linear-gradient(#E3F2FD, #E3F2FD),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+}
+
+.action-button[data-action="download"]:hover {
+  background-image: linear-gradient(#F3E5F5, #F3E5F5),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+}
+
+/* Action Button Success State */
+.action-button[data-action="copy"].success {
+  background-image: linear-gradient(#E8F5E9, #E8F5E9),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+  color: #fff;
+}
+
+.action-button[data-action="share"].success {
+  background-image: linear-gradient(#E3F2FD, #E3F2FD),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+  color: #fff;
+}
+
+.action-button[data-action="download"].success {
+  background-image: linear-gradient(#F3E5F5, #F3E5F5),
+    linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent), var(--color-primary));
+  color: #fff;
+}
+
+/* Tooltip */
+.action-button .tooltip {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: var(--color-text);
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-opacity), var(--transition-transform);
+  z-index: 2;
+}
+
+.action-button:hover .tooltip {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}

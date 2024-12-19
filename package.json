@@ -1,0 +1,23 @@
+{
+  "name": "story-builder-ai",
+  "version": "1.0.0",
+  "description": "AI-powered story generator for children with theme support",
+  "type": "module",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve . --listen 3000"
+  },
+  "keywords": [
+    "ai",
+    "story-generator",
+    "children",
+    "education",
+    "gemini-ai"
+  ],
+  "author": "Yohann Hommet",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

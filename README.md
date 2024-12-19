@@ -58,7 +58,6 @@ story-builder-ai/
 │   ├── scripts/
 │   └── pages/
 ├── .well-known/
-└── docs/
 ```
 
 ## 🎨 Design System
@@ -97,10 +96,6 @@ Detailed documentation is available in the [/docs](./docs) directory:
 - [Security Policy](./docs/security.md)
 - [API Documentation](./docs/api.md)
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](./docs/contributing.md) for details.
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -113,7 +108,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- Website: [storybuilder.ai](https://storybuilder.ai)
+- Website: [storybuilder.ai](https://story-builder-ai.netlify.app)
 - Email: contact@storybuilder.ai
 - Twitter: [@storybuildai](https://twitter.com/storybuildai)
 

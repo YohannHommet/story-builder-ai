@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+:root {
+  /* Colors */
+  --color-primary: #FFD6E7;
+  --color-secondary: #C7E9FF;
+  --color-accent: #BFFFDD;
+  --color-background: #FFF9F5;
+  --color-text: #786B82;
+  --color-white-transparent: rgba(255, 255, 255, 0.95);
+  --color-shadow: rgba(107, 88, 118, 0.1);
+
+  /* Typography */
+  --font-primary: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif;
+  --font-secondary: 'Verdana', sans-serif;
+
+  /* Spacing & Sizes */
+  --border-radius-sm: 0.3125rem;
+  --border-radius: 1.25rem;
+
+  /* Transitions */
+  --transition-transform: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-opacity: opacity 0.3s ease;
+  --transition-colors: color 0.3s ease, border-color 0.3s ease;
+} 

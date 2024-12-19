@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle with gradient -->
+    <circle cx="100" cy="100" r="95" fill="url(#backgroundGradient)" />
+    
+    <!-- Open Book -->
+    <path d="M50 70 C50 60, 150 60, 150 70 L150 130 C150 120, 50 120, 50 130 Z" 
+          fill="white" stroke="#FFD6E7" stroke-width="4"/>
+    <path d="M100 70 L100 130" stroke="#FFD6E7" stroke-width="4"/>
+    
+    <!-- Magical Elements -->
+    <g class="sparkles">
+        <!-- Stars -->
+        <path d="M70 80 L72 85 L77 87 L72 89 L70 94 L68 89 L63 87 L68 85 Z" fill="#C7E9FF">
+            <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M130 90 L132 95 L137 97 L132 99 L130 104 L128 99 L123 97 L128 95 Z" fill="#BFFFDD">
+            <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M85 110 L87 115 L92 117 L87 119 L85 124 L83 119 L78 117 L83 115 Z" fill="#FFD6E7">
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+        </path>
+    </g>
+
+    <!-- Text Path for "Story Builder" -->
+    <path id="textPath" d="M40 150 A60 60 0 0 0 160 150" fill="none"/>
+    <text>
+        <textPath href="#textPath" startOffset="50%" text-anchor="middle" 
+                  fill="#786B82" font-family="Comic Sans MS, sans-serif" font-size="16">
+            Story Builder
+        </textPath>
+    </text>
+
+    <!-- Gradients -->
+    <defs>
+        <linearGradient id="backgroundGradient" x1="0" y1="0" x2="200" y2="200">
+            <stop offset="0%" stop-color="#FFD6E7" stop-opacity="0.2"/>
+            <stop offset="50%" stop-color="#C7E9FF" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#BFFFDD" stop-opacity="0.2"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Animation for magical effect -->
+    <style>
+        @keyframes sparkle {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .sparkles {
+            animation: sparkle 3s infinite;
+            transform-origin: center;
+        }
+    </style>
+</svg> 
+
+
+Create a logo for a children's story generator website called "Story Builder"
+Style:
+- Modern and playful design
+- Child-friendly but professional
+- Clean and minimalist with whimsical elements
+- Suitable for both light and dark backgrounds
+Color Palette:
+Primary Colors:
+- Soft Pink (#FFD6E7)
+- Light Blue (#C7E9FF)
+- Mint Green (#BFFFDD)
+Secondary:
+- White for contrast and clarity
+Design Requirements:
+- Must be recognizable at small sizes (favicon/app icon)
+- Should work in both square and horizontal formats
+- Clean lines and simple shapes
+- Balanced composition
+- Subtle gradients acceptable
+- No sharp edges or aggressive elements
+Style Reference:
+Similar to logos from:
+- Disney+
+- PBS Kids
+- Duolingo
+- Nintendo

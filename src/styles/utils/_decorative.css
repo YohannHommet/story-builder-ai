@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Decorative Elements
+   ========================================================================== */
+
+/* Floating Shapes */
+.floating-shapes {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-shapes::before,
+.floating-shapes::after {
+  content: '';
+  position: absolute;
+  width: 40vmax;
+  height: 40vmax;
+  border-radius: 50%;
+  opacity: 0.1;
+  will-change: transform;
+}
+
+.floating-shapes::before {
+  background-color: var(--color-primary);
+  animation: float 20s infinite;
+}
+
+.floating-shapes::after {
+  background-color: var(--color-secondary);
+  animation: float 25s infinite -10s;
+}
+
+/* Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+.gradient-accent {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+/* Decorative Lines */
+.line-gradient {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-secondary), transparent);
+  opacity: 0.5;
+}
+
+/* Backdrop Blur */
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Shadows */
+.shadow-custom {
+  box-shadow: 0 8px 32px var(--color-shadow);
+} 

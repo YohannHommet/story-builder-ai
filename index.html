@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Story Builder AI - Create Magical Stories for Children | Interactive Story Generator</title>
+    <meta name="title" content="Story Builder AI - Create Magical Stories for Children | Interactive Story Generator">
+    <meta name="description" content="Create personalized, educational stories for children aged 3-6 with our AI-powered story generator. Interactive, safe, and fun storytelling experience.">
+    <meta name="keywords" content="children stories, story generator, AI storytelling, kids stories, educational stories, interactive stories, bedtime stories">
+    <meta name="author" content="Yohann Hommet">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://storybuilder.ai/">
+    <meta property="og:title" content="Story Builder AI - Create Magical Stories for Children">
+    <meta property="og:description" content="Create personalized, educational stories for children aged 3-6 with our AI-powered story generator. Interactive, safe, and fun storytelling experience.">
+    <meta property="og:image" content="https://storybuilder.ai/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://storybuilder.ai/">
+    <meta property="twitter:title" content="Story Builder AI - Create Magical Stories for Children">
+    <meta property="twitter:description" content="Create personalized, educational stories for children aged 3-6 with our AI-powered story generator. Interactive, safe, and fun storytelling experience.">
+    <meta property="twitter:image" content="https://storybuilder.ai/images/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/manifest/site.webmanifest">
+    <link rel="shortcut icon" href="/public/favicons/favicon.ico">
+    <meta name="theme-color" content="#FFD6E7">
+    <link rel="canonical" href="https://storybuilder.ai/">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/main.css">
+
+    <!-- Preload Critical JavaScript -->
+    <link rel="modulepreload" href="/src/js/main.js" as="script" crossorigin="anonymous">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Story Builder AI",
+        "description": "AI-powered story generator for children aged 3-6",
+        "url": "https://storybuilder.ai",
+        "applicationCategory": "EducationalApplication",
+        "genre": "children's stories",
+        "about": {
+            "@type": "Thing",
+            "description": "Interactive story generator for young children"
+        },
+        "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": "3",
+            "suggestedMaxAge": "6"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Theme Sidebar -->
+    <aside class="theme-sidebar" role="complementary" aria-label="Theme selection">
+        <div class="theme-list" role="radiogroup" aria-label="Available themes">
+            <!-- Theme buttons will be dynamically inserted here -->
+        </div>
+    </aside>
+
+    <!-- Theme Button Template -->
+    <template id="theme-button-template">
+        <button class="theme-button" role="radio" tabindex="0">
+            <span class="theme-emoji" aria-hidden="true"></span>
+            <span class="theme-label"></span>
+        </button>
+    </template>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4">Skip to main content</a>
+
+    <div class="floating-shapes" aria-hidden="true"></div>
+    
+    <header class="header-custom relative z-10" role="banner">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="logo-container" style="width: 100px; height: 100px; filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));">
+                <img src="/public/images/story_builder_ai6-removebg-preview.png" alt="Story Builder Logo" class="w-24 h-24 mx-auto" />
+            </div>
+            <h1 class="header-title text-4xl md:text-5xl lg:text-6xl font-bold animate__animated animate__fadeInDown">
+                ✨ Story Builder
+            </h1>
+            <p class="text-xl md:text-2xl mt-6 opacity-90 animate__animated animate__fadeIn animate__delay-1s max-w-2xl mx-auto">
+                Transform your words into magical stories with AI
+            </p>
+            <div class="mt-8 flex justify-center gap-4 animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">AI-Powered ✨</span>
+                <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">Kid-Friendly 🎈</span>
+                <span class="px-4 py-2 bg-white/20 rounded-full text-sm backdrop-blur-sm">Educational 📚</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-grow relative z-10" role="main">
+        <div class="max-w-4xl mx-auto px-4 py-12">
+            <div class="form-container p-8 transform hover:scale-[1.01] transition-all duration-300">
+                <div class="title-section mb-12">
+                    <h2 class="title-custom">
+                        <span class="title-text">Create Your Story</span>
+                    </h2>
+                    <div class="title-decoration" aria-hidden="true"></div>
+                </div>
+
+                <form id="word-form" class="space-y-8" aria-label="Story generation form">                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="nouns" class="input-label">
+                                    Nouns
+                                    <button type="button" 
+                                            class="help-trigger"
+                                            aria-label="Things or objects like dragon, castle">?</button>
+                                </label>
+                            </div>
+                            <input type="text" 
+                                   id="nouns" 
+                                   class="input-custom w-full"
+                                   placeholder="dragon, castle, wizard..."
+                                   aria-label="Enter nouns separated by commas">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="verbs" class="input-label">
+                                    Verbs
+                                    <button type="button" 
+                                            class="help-trigger"
+                                            aria-label="Actions like fly, battle">?</button>
+                                </label>
+                            </div>
+                            <input type="text" 
+                                   id="verbs" 
+                                   class="input-custom w-full"
+                                   placeholder="fly, battle, cast..."
+                                   aria-label="Enter verbs separated by commas">
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-header">
+                                <label for="adjectives" class="input-label">
+                                    Adjectives
+                                    <button type="button" 
+                                            class="help-trigger"
+                                            aria-label="Descriptive words like brave, mystical">?</button>
+                                </label>
+                            </div>
+                            <input type="text" 
+                                   id="adjectives" 
+                                   class="input-custom w-full"
+                                   placeholder="brave, mystical, ancient..."
+                                   aria-label="Enter adjectives separated by commas">
+                        </div>
+                    </div>
+
+                    <button type="button" 
+                            id="generate-story" 
+                            class="button-custom w-full transform hover:scale-[1.01] transition-all duration-200
+                                   hover:-translate-y-1 active:translate-y-0">
+                        <span class="button-emoji" role="img" aria-hidden="true">✨</span>
+                        Generate Story
+                    </button>
+
+                    <div class="form-info text-center italic">
+                        <p class="text-sm text-gray-500">Enter your words below, separated by commas</p>
+                    </div>
+                </form>
+            </div>
+
+            <div id="story-output" class="mt-12 hidden animate__animated animate__fadeInUp" aria-live="polite">
+                <div class="story-container p-8 transform hover:scale-[1.01] transition-all duration-300">
+                    <div class="title-section flex items-center justify-center mb-12">
+                        <h2 class="title-custom">
+                            <span class="title-text">Your Story</span>
+                        </h2>
+                        <div class="title-decoration" aria-hidden="true"></div>
+                    </div>
+                    <div class="story-content">
+                        <p id="story-text" class="text-lg leading-relaxed text-gray-800"></p>
+                    </div>
+                    <div class="action-buttons" role="toolbar" aria-label="Story actions">
+                        <button class="action-button" data-action="copy" aria-label="Copy story to clipboard">
+                            📋
+                            <span class="tooltip">Copy to clipboard</span>
+                        </button>
+                        <button class="action-button" data-action="share" aria-label="Share story">
+                            🔗
+                            <span class="tooltip">Share story</span>
+                        </button>
+                        <button class="action-button" data-action="download" aria-label="Download story">
+                            💾
+                            <span class="tooltip">Download as text</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-custom relative" role="contentinfo">
+        <div class="container mx-auto px-6">
+            <!-- Main footer content -->
+            <div class="footer-grid">
+                <!-- Navigation -->
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <nav class="footer-links" aria-label="Footer navigation">
+                        <a href="/" class="footer-link">Home</a>
+                        <a href="/about.html" class="footer-link">About</a>
+                        <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                        <a href="/terms.html" class="footer-link">Terms of Service</a>
+                    </nav>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-section text-center">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                      <p class="text-gray-400">Built with ❤️ by Yohann</p>
+                        <a href="mailto:contact@storybuilder.ai">contact@storybuilder.ai</a>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="footer-links">
+                        <p class="text-gray-400">Powered by Gemini</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/storybuildai" 
+                               class="footer-link" 
+                               aria-label="Visit our Twitter">
+                                Twitter
+                            </a>
+                            <a href="https://github.com/YohannHommet/story-builder-ai" 
+                               class="footer-link" 
+                               aria-label="Visit our GitHub">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2024 Story Builder AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

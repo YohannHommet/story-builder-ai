@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 48em) {
+  :root {
+    --border-radius: 0.9375rem;
+  }
+
+  .header-custom {
+    padding: 3rem 1rem 5rem;
+  }
+
+  .floating-shapes::before,
+  .floating-shapes::after {
+    width: 70vmax;
+    height: 70vmax;
+  }
+
+  .input-custom {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .button-custom {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .story-title {
+    font-size: 1.5rem;
+  }
+
+  .story-content {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .action-buttons {
+    gap: 0.75rem;
+  }
+
+  .action-button {
+    --button-size: 2.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .tooltip {
+    display: none;
+  }
+}
+
+/* Responsive Grid */
+@media (min-width: 48em) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Responsive Text */
+@media (min-width: 48em) {
+  .md\:text-xl {
+    font-size: 1.25rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive Spacing */
+@media (min-width: 48em) {
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+} 

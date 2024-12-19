@@ -1,0 +1,13 @@
+/* TEAM */
+Developer: Yohann Hommet
+Contact: yohann@storybuilder.ai
+Twitter: @yohannhommet
+From: France
+
+/* SITE */
+Last update: 2024/03/19
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+Stack: HTML, CSS, JavaScript, Tailwind CSS
+AI: Gemini API 
