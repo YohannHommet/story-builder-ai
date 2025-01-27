@@ -1,18 +1,21 @@
 export const CONFIG = {
     API: {
         GEMINI_KEY: 'AIzaSyBXEgwzPVaUCLbz7IbcK2Lz2dtqwZoZXRM',
-        GEMINI_URL: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent'
+        GEMINI_URL: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent',
+        DEEPSEEK_KEY: 'sk-45dd64333d2345688b3d770cc78bd43b',
+        DEEPSEEK_URL: 'https://api.deepseek.com/chat/completions'
     },
     ANIMATION: {
         SUCCESS_DURATION: 1500,
         STORY_APPEAR_DURATION: 500
     },
     STORY: {
-        MAX_LENGTH: 200,
+        MAX_LENGTH: 250,
         TARGET_AGE: '3-6',
         getFileName: () => {
             const date = new Date();
-            const formattedDate = date.toISOString().split('T')[0]; // YYYY-MM-DD
+            const formattedDate = date.toISOString().split('T')[0];
+
             return `story_${formattedDate}.txt`;
         }
     },
@@ -55,11 +58,10 @@ Storytelling Guidelines:
    - Make sound effects
    - Do simple movements or gestures
    - Answer questions or make predictions
-4. Add sensory details (sounds, colors, textures)
-5. Include gentle humor and playful moments
-6. Create opportunities for learning (counting, colors, emotions, etc.)
-7. Use varied sentence rhythms to maintain engagement
-8. Add simple repetitive phrases children can remember and say along
+4. Include gentle humor and playful moments
+5. Create opportunities for learning (counting, colors, emotions, etc.)
+6. Use varied sentence rhythms to maintain engagement
+7. Add simple repetitive phrases children can remember and say along
 
 Style Requirements:
 - Length: Around ${CONFIG.STORY.MAX_LENGTH} words, with natural paragraph breaks
@@ -72,13 +74,6 @@ Safety Guidelines:
 - Keep content gentle and non-threatening
 - Avoid complex themes or scary elements
 - Focus on positive messages and outcomes
-- Filter out any inappropriate concepts or words
+- Filter out any inappropriate concepts or w
 
-Make the story unique by:
-- Varying the story structure (not always linear)
-- Adding unexpected but delightful twists
-- Creating memorable catchphrases
-- Including moments of surprise and discovery
-- Making each character's voice distinct
-
-Remember to naturally incorporate all provided words while maintaining the story's flow and engagement.`;
+Remember to naturally incorporate all provided words while maintaining the story's flow and engagement. Story should be unique, creative, and engaging.`;

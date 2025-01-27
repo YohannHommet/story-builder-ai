@@ -11,17 +11,20 @@ class APIError extends Error {
 export class StoryAPI {
     static async generateStory(prompt) {
         try {
-            const response = await fetch(`${CONFIG.API.GEMINI_URL}?key=${CONFIG.API.GEMINI_KEY}`, {
+            const response = await fetch(`${CONFIG.API.DEEPSEEK_URL}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${CONFIG.API.DEEPSEEK_KEY}`
                 },
                 body: JSON.stringify({
-                    contents: [{
-                        parts: [{
-                            text: prompt
-                        }]
-                    }]
+                    model: 'deepseek-chat',
+                    messages: [{
+                        role: 'assistant',
+                        content: prompt
+                    }],
+                    temperature: 1.5,
+                    stream: false,
                 })
             });
 
@@ -34,16 +37,16 @@ export class StoryAPI {
             }
 
             const data = await response.json();
-            
-            if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
+
+            if (!data.choices?.[0]?.message?.content) {
                 throw new APIError('Invalid response format from API', 500);
             }
 
-            return data.candidates[0].content.parts[0].text.trim();
+            console.log(data.choices[0].message.content.trim());
+
+            return data.choices[0].message.content.trim();
         } catch (error) {
-            if (error instanceof APIError) {
-                throw error;
-            }
+            if (error instanceof APIError)  throw error;
             throw new APIError(error.message, 500);
         }
     }

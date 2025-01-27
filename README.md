@@ -23,10 +23,10 @@ An interactive AI-powered story generator designed specifically for young childr
 
 ## 🛠 Tech Stack
 
-- HTML5, CSS3, JavaScript
-- Tailwind CSS for styling
+- Vite + Vue 3.4
+- Typescript
+- Sass
 - Google Gemini AI API
-- Modern browser APIs (Web Share, Clipboard)
 
 ## 🚀 Getting Started
 
@@ -108,6 +108,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Google Gemini AI for the story generation
 - The open-source community
 - All our contributors and users
+
+## Prompt
+
+- [Prompt](./prompt.md)
 
 ## 📞 Contact
 

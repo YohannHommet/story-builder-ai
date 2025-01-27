@@ -4,7 +4,7 @@
 
 .theme-sidebar {
   position: fixed;
-  left: -2.5rem;
+  left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 50;
@@ -17,7 +17,7 @@
 }
 
 .theme-sidebar:hover {
-  left: 0.5rem;
+  left: 0;
   box-shadow: 4px 0 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,7 +43,7 @@
 .theme-button[aria-checked="true"]::after {
   content: '';
   position: absolute;
-  right: 0.25rem;
+  right: -0.25rem;
   top: 50%;
   transform: translateY(-50%);
   width: 6px;

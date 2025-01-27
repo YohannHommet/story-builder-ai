@@ -22,12 +22,12 @@ export const THEMES = {
         description: 'Magical worlds full of wonder and adventure',
         emoji: 'fa-solid fa-dragon',
         style: {
-            primary: '#FFD6E7',
-            secondary: '#B8E1FF',
-            accent: '#BFFFDD',
+            primary: '#ffc8dd',
+            secondary: '#bde0fe',
+            accent: '#ffafcc',
+            footer: '#cdb4db',
             background: 'linear-gradient(135deg, rgba(255, 214, 231, 0.2), rgba(199, 233, 255, 0.2))',
             text: '#786B82',
-            'text-light': 'rgba(120, 107, 130, 0.8)'
         },
         suggestions: {
             nouns: [
@@ -57,6 +57,7 @@ export const THEMES = {
             primary: '#E5D4FF',
             secondary: '#FDFCDC',
             accent: '#E5D4FF',
+            footer: '#4A4A7B',
             background: 'linear-gradient(135deg, rgba(229, 212, 255, 0.2), rgba(199, 233, 255, 0.2))',
             text: '#786B82',
             'text-light': 'rgba(120, 107, 130, 0.8)'
@@ -89,9 +90,9 @@ export const THEMES = {
             primary: '#BFFFDD',
             secondary: '#5DA9E9',
             accent: '#FFD6E7',
+            footer: '#2C5784',
             background: 'linear-gradient(135deg, rgba(191, 255, 221, 0.2), rgba(199, 233, 255, 0.2))',
             text: '#786B82',
-            'text-light': 'rgba(120, 107, 130, 0.8)'
         },
         suggestions: {
             nouns: [
@@ -121,9 +122,9 @@ export const THEMES = {
             primary: '#BFFFDD',
             secondary: '#FFD6E7',
             accent: '#C7E9FF',
+            footer: '#2D5A4B',
             background: 'linear-gradient(135deg, rgba(191, 255, 221, 0.2), rgba(255, 214, 231, 0.2))',
             text: '#786B82',
-            'text-light': 'rgba(120, 107, 130, 0.8)'
         },
         suggestions: {
             nouns: [
